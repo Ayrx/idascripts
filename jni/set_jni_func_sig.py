@@ -4,6 +4,8 @@ import ida_typeinf
 
 
 def apply_jni_func_sig():
+    """ Apply the standard JNIEnv* and jobject signature to a function.
+    """
     print("Function: {}".format(idc.get_func_name(here())))
 
     func = ida_hexrays.decompile(here())
